@@ -14,8 +14,7 @@ $(document).ready(function() {
       $("#images").empty();
       var hashtag = $('#hashtag').val();
       url = "https://api.instagram.com/v1/tags/"+ hashtag +"/media/recent?access_token=295298.f59def8.72618abdb3c9433ca44e1a8e2490e403&callback=?";
-      $.getJSON(url, processImages);
-      onClick=_gaq.push(['_trackEvent', 'Buttons', 'Click', 'Searchfield']);  
+      $.getJSON(url, processImages);  
     }
   });
 //Click Search and your hashtag connects to Instagram //
@@ -24,7 +23,6 @@ $('#addTodoBtn').click(function(){
   var hashtag = $('#hashtag').val();
   url = "https://api.instagram.com/v1/tags/"+ hashtag +"/media/recent?access_token=295298.f59def8.72618abdb3c9433ca44e1a8e2490e403&callback=?";
   $.getJSON(url, processImages);
-  onClick=_gaq.push(['_trackEvent', 'Buttons', 'Click', 'Searchbutton']);  
 });
 
 //Click button and text goes into the searchbar 
@@ -34,7 +32,6 @@ $("#valthorens").click(function() {
   var hashtag = $('#hashtag').val();
   url = "https://api.instagram.com/v1/tags/"+ hashtag +"/media/recent?access_token=295298.f59def8.72618abdb3c9433ca44e1a8e2490e403&callback=?";
   $.getJSON(url, processImages);
-  onClick=_gaq.push(['_trackEvent', 'Buttons', 'Click', 'ValThorens']);  
 });
 
 $("#aspen").click(function() { 
@@ -43,7 +40,6 @@ $("#aspen").click(function() {
   var hashtag = $('#hashtag').val();
   url = "https://api.instagram.com/v1/tags/"+ hashtag +"/media/recent?access_token=295298.f59def8.72618abdb3c9433ca44e1a8e2490e403&callback=?";
   $.getJSON(url, processImages);
-  onClick=_gaq.push(['_trackEvent', 'Buttons', 'Click', 'Aspen']);  
 });
 
 $("#levifinland").click(function() { 
@@ -52,7 +48,6 @@ $("#levifinland").click(function() {
   var hashtag = $('#hashtag').val();
   url = "https://api.instagram.com/v1/tags/"+ hashtag +"/media/recent?access_token=295298.f59def8.72618abdb3c9433ca44e1a8e2490e403&callback=?";
   $.getJSON(url, processImages);
-  onClick=_gaq.push(['_trackEvent', 'Buttons', 'Click', 'Levi']);  
 });
 
 $("#zermatt").click(function() { 
@@ -61,7 +56,6 @@ $("#zermatt").click(function() {
   var hashtag = $('#hashtag').val();
   url = "https://api.instagram.com/v1/tags/"+ hashtag +"/media/recent?access_token=295298.f59def8.72618abdb3c9433ca44e1a8e2490e403&callback=?";
   $.getJSON(url, processImages);
-  onClick=_gaq.push(['_trackEvent', 'Buttons', 'Click', 'Zermatt']);  
 });
 
 $("#extremeskiing").click(function() { 
@@ -70,7 +64,6 @@ $("#extremeskiing").click(function() {
   var hashtag = $('#hashtag').val();
   url = "https://api.instagram.com/v1/tags/"+ hashtag +"/media/recent?access_token=295298.f59def8.72618abdb3c9433ca44e1a8e2490e403&callback=?";
   $.getJSON(url, processImages);
-  onClick=_gaq.push(['_trackEvent', 'Buttons', 'Click', 'Extremeskiing']);  
 });
 
 
