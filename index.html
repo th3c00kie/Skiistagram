@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script type='text/javascript'>
+<head>
+  <link rel="shortcut icon" type="image/ico" href="http://sofiepredikaka.se/favicon.ico" />
+  <title>Skiistagram</title>
+
+  <!--  JAVASCRIPT  -->
+  <!-- jquery should go here! -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+
+  <!--  CSS  -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/bootstrap-responsive.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <script type='text/javascript'>
   
 
   var _gaq = _gaq || [];
@@ -15,45 +30,28 @@
   })();
 
 
-</script>
+  </script>
+</head>
 
-  <link rel="shortcut icon" type="image/ico" href="http://sofiepredikaka.se/favicon.ico" />
-    <title>Skiistagram</title>
-
-   <!--  JAVASCRIPT  -->
-    <!-- jquery should go here! -->
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>
-
-    <!--  CSS  -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/bootstrap-responsive.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
- 
-  </head>
-
-  <body>
-    <div class="container row-fluid">
-      <div class="jumbotron">
-        <h1>Skiistagram</h1>
-      </div>
-      <br>
-      <div class="skiibtns">
-        <button onClick="_gaq.push(['_trackEvent', 'Buttons', 'Press', 'ValThorens']);" id="valthorens" class="btn btn-warning" type="button">Val Thorens</button>
-        <button onClick="_gaq.push(['_trackEvent', 'Buttons', 'Press', 'Aspen']);" id="aspen" class="btn btn-warning" type="button">Aspen</button>
-        <button onClick="_gaq.push(['_trackEvent', 'Buttons', 'Press', 'Levi']);" id="levifinland" class="btn btn-warning" type="button">Levi</button>
-        <button onClick="_gaq.push(['_trackEvent', 'Buttons', 'Press', 'Zermatt']);" id="zermatt" class="btn btn-warning" type="button">Zermatt</button>
-        <button onClick="_gaq.push(['_trackEvent', 'Buttons', 'Press', 'ExtremeSkiing']);" id="extremeskiing" class="btn btn-warning" type="button">Extreme skiing</button>
-      </div>
-      <br>
-      <div class="searchthings">
-        <input  id="hashtag" class="span2" type="text" value="search the snow">
-        <button id="addTodoBtn" class="btn btn-warning" type="button">Search</button>
-      </div>
-      <span id="images"></span> 
-    </div> 
-  </body>
+<body>
+  <div class="container row-fluid">
+    <div class="jumbotron">
+      <h1>Skiistagram</h1>
+    </div>
+    <br>
+    <div class="skiibtns">
+      <button onClick="_gaq.push(['_trackEvent', 'Buttons', 'Press', 'ValThorens']);" id="valthorens" class="btn btn-warning" type="button">Val Thorens</button>
+      <button onClick="_gaq.push(['_trackEvent', 'Buttons', 'Press', 'Aspen']);" id="aspen" class="btn btn-warning" type="button">Aspen</button>
+      <button onClick="_gaq.push(['_trackEvent', 'Buttons', 'Press', 'Levi']);" id="levifinland" class="btn btn-warning" type="button">Levi</button>
+      <button onClick="_gaq.push(['_trackEvent', 'Buttons', 'Press', 'Zermatt']);" id="zermatt" class="btn btn-warning" type="button">Zermatt</button>
+      <button onClick="_gaq.push(['_trackEvent', 'Buttons', 'Press', 'ExtremeSkiing']);" id="extremeskiing" class="btn btn-warning" type="button">Extreme skiing</button>
+    </div>
+    <br>
+    <div class="searchthings">
+      <input  id="hashtag" class="span2" type="text" value="search the snow">
+      <button id="addTodoBtn" class="btn btn-warning" type="button">Search</button>
+    </div>
+    <span id="images"></span> 
+  </div> 
+</body>
 </html>
